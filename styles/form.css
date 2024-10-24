@@ -114,4 +114,39 @@ select {
 
   }
 
+  .adult-info {
+    margin-top: 3rem;
+    display: grid;
+    
+    & p {
+      font: 400 0.87rem/1.5 "Poppins", serif;
+      color: var(--text-tertiary);
+      margin-top: .5rem;
+    }
+    & label {
+      margin-top: 1.5rem;
+    }
+  }
+
+  .adress {
+    display: grid;
+    margin-top: 1.5rem;
+    grid-template-columns: 24rem 1fr;
+    row-gap: 1.5rem;
+    column-gap: 1.5rem;
+    
+    
+    
+  }
+  .adress-info {
+    display: grid;
+    
+    & legend {
+      margin-top: 3rem;
+    }
+    
+  }
+
+  
+
 

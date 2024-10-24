@@ -21,8 +21,10 @@
         <img src="./assets/icons/arrow-left-02.svg" alt="">
         Voltar
       </div>
+      <div class="header">
       <h1>Formulário de matrícula</h1>
       <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
+    </div>
 
       <form class="form" enctype="multipart/form-data">
         <fieldset class="child-info">
@@ -53,8 +55,7 @@
           <textarea name="medical-info" id="medical-info"
           placeholder="A criança possui alguma condição médica que nós precisamos ficar ciente? (Se sim, especifique)"
           cols="30"
-          rows="5"
-          required>
+          rows="5">
         </textarea>
         </div>
 
@@ -72,6 +73,87 @@
             
           <p style="color: #A8A29E;">Clique aqui para selecionar arquivos</p>
           </div>
+        </div>
+
+        <div class="adress-info">
+          <legend>Endereço residencial</legend>
+          <label for="CEP">CEP</label>
+          <input type="text" id="CEP" name="CEP"
+          required
+          placeholder="00000-000"
+          autocomplete="postal-code"
+          maxlength="8"
+          >
+          <div class="adress">
+            <div>
+            <label for="rua">Rua</label>
+            <input type="text" name="rua" id="rua"
+            required>
+          </div>
+        
+          <div>
+            <label for="nm">Número</label>
+            <input type="number" name="numero" id="nm"
+            required
+            minlength="0">
+          </div>
+          <div>
+            <label for="cidade">Cidade</label>
+            <input type="text" name="cidade" id="cidade"
+            required>
+          </div>
+          <div>
+            <label for="estados">Estado</label>
+            <select name="estados" id="estados">
+              <option value="#"></option>
+              <option value="AC">Acre (AC)</option>
+              <option value="AL">Alagoas (AL)</option>
+              <option value="AP">Amapá (AP)</option>
+              <option value="AM">Amazonas (AM)</option>
+              <option value="BA">Bahia (BA)</option>
+              <option value="CE">Ceará (CE)</option>
+              <option value="DF">Distrito Federal (DF)</option>
+              <option value="ES">Espírito Santo (ES)</option>
+              <option value="GO">Goiás (GO)</option>
+              <option value="MA">Maranhão (MA)</option>
+              <option value="MT">Mato Grosso (MT)</option>
+              <option value="MS">Mato Grosso do Sul (MS)</option>
+              <option value="MG">Minas Gerais (MG)</option>
+              <option value="PA">Pará (PA)</option>
+              <option value="PB">Paraíba (PB)</option>
+              <option value="PR">Paraná (PR)</option>
+              <option value="PE">Pernambuco (PE)</option>
+              <option value="PI">Piauí (PI)</option>
+              <option value="RJ">Rio de Janeiro (RJ)</option>
+              <option value="RN">Rio Grande do Norte (RN)</option>
+              <option value="RS">Rio Grande do Sul (RS)</option>
+              <option value="RO">Rondônia (RO)</option>
+              <option value="RR">Roraima (RR)</option>
+              <option value="SC">Santa Catarina (SC)</option>
+              <option value="SP">São Paulo (SP)</option>
+              <option value="SE">Sergipe (SE)</option>
+              <option value="TO">Tocantins (TO)</option>
+            </select>
+        </div>
+          </div>
+        </div>
+
+        <div class="adult-info">
+          <legend>Informações do responsável</legend>
+          <label for="adult-name">Nome do responsável</label>
+          <input type="text" name="adult-name" id="adult-name"
+          required
+          placeholder="Nome do responsável">
+          <p>Principal responsável legal e contato de emergência</p>
+
+          <label for="phone">Telefone</label>
+          <input type="text" id="phone" name="phone"
+          required
+          placeholder="(99) 9 9999-9999">
+
+          <label for="email">E-mail</label> 
+          <input type="email" id="email" name="email" required
+          placeholder="papailegal123@...">
         </div>
         
 
