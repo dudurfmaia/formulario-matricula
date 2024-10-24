@@ -88,7 +88,9 @@
             <div>
             <label for="rua">Rua</label>
             <input type="text" name="rua" id="rua"
-            required>
+            required
+            disabled
+            placeholder="Rua das flores">
           </div>
         
           <div>
@@ -100,40 +102,16 @@
           <div>
             <label for="cidade">Cidade</label>
             <input type="text" name="cidade" id="cidade"
-            required>
+            required
+            disabled
+            placeholder="São Paulo">
           </div>
           <div>
             <label for="estados">Estado</label>
-            <select name="estados" id="estados">
-              <option value="#"></option>
-              <option value="AC">Acre (AC)</option>
-              <option value="AL">Alagoas (AL)</option>
-              <option value="AP">Amapá (AP)</option>
-              <option value="AM">Amazonas (AM)</option>
-              <option value="BA">Bahia (BA)</option>
-              <option value="CE">Ceará (CE)</option>
-              <option value="DF">Distrito Federal (DF)</option>
-              <option value="ES">Espírito Santo (ES)</option>
-              <option value="GO">Goiás (GO)</option>
-              <option value="MA">Maranhão (MA)</option>
-              <option value="MT">Mato Grosso (MT)</option>
-              <option value="MS">Mato Grosso do Sul (MS)</option>
-              <option value="MG">Minas Gerais (MG)</option>
-              <option value="PA">Pará (PA)</option>
-              <option value="PB">Paraíba (PB)</option>
-              <option value="PR">Paraná (PR)</option>
-              <option value="PE">Pernambuco (PE)</option>
-              <option value="PI">Piauí (PI)</option>
-              <option value="RJ">Rio de Janeiro (RJ)</option>
-              <option value="RN">Rio Grande do Norte (RN)</option>
-              <option value="RS">Rio Grande do Sul (RS)</option>
-              <option value="RO">Rondônia (RO)</option>
-              <option value="RR">Roraima (RR)</option>
-              <option value="SC">Santa Catarina (SC)</option>
-              <option value="SP">São Paulo (SP)</option>
-              <option value="SE">Sergipe (SE)</option>
-              <option value="TO">Tocantins (TO)</option>
-            </select>
+            <input type="text" id="estados" name="estados"
+            disabled
+            placeholder="SP">
+            
         </div>
           </div>
         </div>
@@ -147,17 +125,102 @@
           <p>Principal responsável legal e contato de emergência</p>
 
           <label for="phone">Telefone</label>
-          <input type="text" id="phone" name="phone"
+          <input type="tel" id="phone" name="phone"
           required
           placeholder="(99) 9 9999-9999">
 
           <label for="email">E-mail</label> 
           <input type="email" id="email" name="email" required
           placeholder="papailegal123@...">
+          <div class="error">
+          <img src="./assets/icons/alert-circle.svg" alt="">
+          <span>Insira um e-mail válido</span></div>
         </div>
         
 
         </fieldset>
+
+        <fieldset class="matricula">
+          <legend>Opções de matrícula</legend>
+          <div class="input-matricula">
+            <label>Selecione o turno de estudo</label>
+
+            <div class="radio">
+
+              <div class="radio-inner">
+                <div class="radioimg"></div>
+                  <input type="radio" name="turno" id="manha" value="manha">
+                  <img src="./assets/icons/sun-cloud-02.svg" alt="ícone de sol com nuvem">
+                  <label for="manha">Manhã</label>
+                
+              </div>
+
+              <div class="radio-inner">
+                <div class="radioimg"></div>
+                  <input type="radio" name="turno" id="tarde" value="tarde">
+                  <img src="./assets/icons/sun-02.svg" alt="ícone de sol">
+                  <label for="tarde">Tarde</label>
+                
+              </div>
+
+            </div>
+          </div>
+
+          <div>
+            <label>Qual esporte você gostaria de inscrever seu filho ?</label>
+
+            <div class="radio">
+              <div class="radio-inner">
+                <div class="radioimg"></div>
+                <input type="radio" name="sport" id="soccer">
+                <img src="./assets/icons/football.svg" alt="Futebol">
+                <label for="soccer">Futebol</label>
+              </div>
+
+              <div class="radio-inner">
+                <div class="radioimg"></div>
+                <input type="radio" name="sport" id="basket">
+                <img src="./assets/icons/basketball-02.svg" alt="Basket">
+                <label for="basket">Basquete</label>
+              </div>
+
+              <div class="radio-inner">
+                <div class="radioimg"></div>
+                <input type="radio" name="sport" id="natacao">
+                <img src="./assets/icons/swimming.svg" alt="Natação">
+                <label for="natacao">Natação</label>
+              </div>
+
+              <div class="radio-inner">
+                <div class="radioimg"></div>
+                <input type="radio" name="sport" id="yoga">
+                <img src="./assets/icons/yoga-02.svg" alt="Yoga">
+                <label for="yoga">Yoga</label>
+              </div>
+
+              <div class="radio-inner">
+                <div class="radioimg"></div>
+                <input type="radio" name="sport" id="volei">
+                <img src="./assets/icons/volleyball.svg" alt="Vôlei">
+                <label for="volei">Vôlei</label>
+              </div>
+
+              <div class="radio-inner">
+                <div class="radioimg"></div>
+                <input type="radio" name="sport" id="boxe">
+                <img src="./assets/icons/boxing-glove-01.svg" alt="Boxe">
+                <label for="boxe">Boxe</label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        
+
+        <div class="terms-wrapper checkbox-wrapper">
+          <div class="checkboximg"></div>
+          <input type="checkbox" name="terms" id="terms">
+          <label for="terms">Declaro que li e concordo com os <strong>Termos e Condições</strong> e com a <strong>Política de Privacidade</strong> da escola Estrela do Amanhã. </label>
+        </div>
       </form>
     </main>
 
@@ -170,7 +233,9 @@
             conta</h2>
             <p>Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante.</p>
         </header>
-        <img src="./assets/ilustration.png" alt="">
+        <div class="illustration">
+        <img src="./assets/icons/Illustration.svg" alt="">
+      </div>
       </div>
     </aside>
 
