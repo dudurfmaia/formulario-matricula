@@ -2,13 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 :root {
   
   --heading1: 700 2rem/1.2 "Poppins", serif;
-  --heading1: 700 1.5rem/1.2 "Poppins", serif;
-  --heading1: 700 1.25rem/1.2 "Poppins", serif;
+  --heading2: 700 1.5rem/1.2 "Poppins", serif;
+  --heading3: 700 1.25rem/1.2 "Poppins", serif;
   --heading4: 700 1rem/1.2 "Poppins", serif;
 
   /* Colors*/
