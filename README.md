@@ -18,7 +18,7 @@ Programa exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnolog
 
 
 <p align="center">
-  <img alt="formulario-matricula" src="(https://github.com/user-attachments/assets/265194fa-c97b-4146-8cea-1b08a6f011ae)
+  <img alt="formulario-matricula" src="![Thumbnail](https://github.com/user-attachments/assets/c0d0c494-a454-4fe1-a90c-263062344ac9)
 " width="100%">
 </p>
 
